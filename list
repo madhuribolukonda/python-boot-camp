@@ -1,0 +1,24 @@
+l=[1,2,3,4]
+print(*l,end="@\n")
+l.append(9999)
+print(*l)
+l.insert(0,9999)
+print(*l)
+l.insert(888,999)
+print(*l)
+print(len(l))
+l.pop()
+print(*l)
+l.pop(2)
+print(*l)
+l.pop(77)
+print(*l)  #index out of range
+l2=[5,6,7,8]
+print(*(l+l2)) #concatination
+new_l=l.copy()
+new_l.pop()  #it will default pop the last element
+print(*new_l)
+l3=[1,2,3,4,2,4,4,5,4]
+print(l3.count(4))
+l4=[1,-2,8,-6,9,5,4,0,-10,-4]
+l4.sort() 
